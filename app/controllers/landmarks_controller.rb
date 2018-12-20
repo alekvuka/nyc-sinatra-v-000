@@ -22,6 +22,7 @@ class LandmarksController < ApplicationController
     @landmark = Landmark.find(params[:id])
 
     if !params[:landmark][:name].empty? && !params[:landmark][:year_completed].empty?
+      @landmark.name = params[:landmark][:name]
 
 
   end
