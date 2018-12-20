@@ -31,6 +31,8 @@ class LandmarksController < ApplicationController
       @landmark.year_completed = params[:landmark][:year_completed]
     end
 
+    binding.pry
+
     erb :'/landmarks/show'
 
   end
