@@ -1,8 +1,10 @@
-<h2>Edit Historical Landmark</h2>
+<h2>Edit <%=@figure.name%></h2>
 
 <form method = 'POST' action = '/figures/<%@figure.id%>'>
   Name:<input type='text' name='landmark[name]' id='landmark_name'>
   Year:<input type='text' name='landmark[year_completed]' id='landmark_year_completed'>
+
+  <input type='submit' value='Edit Landmark'>
  
 
 <a class="button" href="/figures">Landmarks</a>
