@@ -9,7 +9,7 @@ class LandmarksController < ApplicationController
   end
 
   post 'landmarks' do
-    erb :''
+    binding.pry
 
   end
 
