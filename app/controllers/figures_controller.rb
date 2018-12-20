@@ -43,9 +43,10 @@ class FiguresController < ApplicationController
     erb :'/figures/edit'
   end
 
-  patch '/figure/:id' do
+  patch '/figures/:id' do
+      binding.pry
     @figure = Figure.find(params[:id])
-    binding.pry
+
 
   end
 
