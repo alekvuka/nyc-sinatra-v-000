@@ -1,12 +1,12 @@
 class LandmarksController < ApplicationController
 
-  get '/' do
+  get '/landmarks' do
     erb :'/landmarks/index'
   end
 
-  get 'new' do
+  get '/landmraks/new' do
     erb :'/landmarks/new'
-  end 
+  end
 
 
 end
