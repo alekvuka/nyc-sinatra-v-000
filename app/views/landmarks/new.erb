@@ -1,7 +1,8 @@
 <h2>Create New Landmark</h2>
 
 <form method='POST' action='/landmarks'>
-  <h2>Name:</h2> <input type='text' name='landmark[name]' id='landmark_name'>
+  Name:<input type='text' name='landmark[name]' id='new_landmark'>
+  Year:<input type='text' name='landmark[year]' id='year_completed'>
 
   <h3> Titles: </h3>
     <%Title.all.each do |title|%>
