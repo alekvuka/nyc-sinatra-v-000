@@ -23,7 +23,10 @@ class LandmarksController < ApplicationController
 
     if !params[:landmark][:name].empty? && !params[:landmark][:year_completed].empty?
       @landmark.name = params[:landmark][:name]
+      @landmark.year_completed = params[:landmark][:year_completed]
+    end
 
+    erb :'/landmarks/show'
 
   end
 
