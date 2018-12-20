@@ -24,15 +24,14 @@ class LandmarksController < ApplicationController
   end
 
   patch '/landmarks/:id' do
+    binding.pry
     @landmark = Landmark.find(params[:id])
-      binding.pry
+
 
     if !params[:landmark][:name].empty? && !params[:landmark][:year_completed].empty?
       @landmark.name = params[:landmark][:name]
       @landmark.year_completed = params[:landmark][:year_completed]
     end
-
-
 
     erb :'/landmarks/show'
 
