@@ -47,7 +47,7 @@ class FiguresController < ApplicationController
     @figure = Figure.find(params[:id])
     binding.pry
 
-    if params[:figure][:name] != nil
+    if params[:figure][:name].empty?
       @figure.titles = Title.find(params[:figure][:title_ids])
     end
 
