@@ -18,6 +18,14 @@ class LandmarksController < ApplicationController
     erb :'/landmarks/show'
   end
 
+  patch '/landmarks/:id' do
+    @landmark = Landmark.find(params[:id])
+
+    if !params[:landmark][:name].empty? && !params[:landmark][:year_completed].empty?
+
+
+  end
+
 
 
 end
